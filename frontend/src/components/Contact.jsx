@@ -14,7 +14,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/contact', {
+      const response = await axios.post('https://websitebigmac.onrender.com/contact', {
         name,
         phone,
         email,
@@ -54,3 +54,5 @@ const Contact = () => {
 };
 
 export default Contact;
+
+// http://localhost:5000

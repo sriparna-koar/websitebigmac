@@ -23,7 +23,7 @@ function EnquiryForm() {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:5000/enquiry', {
+      const response = await fetch('https://websitebigmac.onrender.com/enquiry', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
