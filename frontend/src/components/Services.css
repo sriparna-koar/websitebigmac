@@ -92,11 +92,11 @@
     }
   
     .service-card {
-      width: calc(100% - 6px); /* Full width on smaller screens with a little padding */
+      width: calc(110% - 1px); /* Full width on smaller screens with a little padding */
       max-width: auto;
       margin-bottom: 20px; /* Space between cards on mobile */
       height: auto;
-      margin-left: -15%;  /* Let height adjust based on content */
+      margin-left: -17%;  /* Let height adjust based on content */
     }
   
     .service-card h2 {

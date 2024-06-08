@@ -246,3 +246,15 @@ body {
     background-color: #fff; /* Change color of bars when menu is open */
   }
 }
+@media (max-width: 480px) {
+  .logo-container {
+    justify-content: flex-start; /* Align logo to the left */
+    padding-left: 200px; /* Add some padding to the left for spacing */
+  }
+  .logo-container::before {
+    left: 260px; /* Adjust the position for mobile devices */
+  }
+  .logo {
+    margin-right: 10px;
+  }
+}

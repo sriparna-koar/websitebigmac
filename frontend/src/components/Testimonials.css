@@ -185,7 +185,8 @@
 
 @media (max-width: 480px) {
     .testimonial {
-        width: 90%;
+        width: 104%;
+        margin-left:-13px;
     }
     .testimonial-text {
         font-size: 1em;

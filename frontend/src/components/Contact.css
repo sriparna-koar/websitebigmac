@@ -9,75 +9,113 @@
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.9); /* Darker and more prominent shadow */
 }
 
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 2.5em; /* Increased font size */
+  margin-bottom: 20px;
+}
 
-  
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Wrap elements on smaller screens */
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-group + .form-group {
+  margin-left: 20px;
+}
+
+label {
+  color: #bbb; /* Light gray text */
+  margin-bottom: 10px;
+}
+
+input,
+textarea {
+  background: #333; /* Darker input background */
+  color: #ddd; /* Light gray text */
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgb(80, 212, 212); /* Blue glow on focus */
+}
+
+textarea {
+  height: 150px;
+  resize: none;
+}
+
+button {
+  align-self: center;
+  padding: 15px 30px;
+  background: #00aaff; /* Bright blue button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #0077cc;
+  color:#000000; /* Darker blue on hover */
+}
+
+/* Responsive styles for screen widths 768px and below */
+@media (max-width: 768px) {
+  #contact {
+    padding: 30px;
+  }
+
   h1 {
-    color: white;
-    text-align: center;
-    font-size: 2.5em; /* Increased font size */
-    margin-bottom: 20px;
+    font-size: 2em;
   }
-  
-  .contact-form {
-    display: flex;
-    flex-direction: column;
-  }
-  
+
   .form-row {
-    display: flex;
-    justify-content: space-between;
+    flex-direction: column; /* Stack elements vertically */
   }
-  
-  .form-group {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-  }
-  
+
   .form-group + .form-group {
-    margin-left: 20px;
+    margin-left: 0;
   }
-  
-  label {
-    color: #bbb; /* Light gray text */
-    margin-bottom: 10px;
+}
+
+/* Responsive styles for screen widths 480px and below */
+@media (max-width: 480px) {
+  #contact {
+    padding: 20px;
   }
-  
+
+  h1 {
+    font-size: 1.8em;
+  }
+
   input,
   textarea {
-    background: #333; /* Darker input background */
-    color: #ddd; /* Light gray text */
-    border: none;
-    padding: 15px;
-    border-radius: 5px;
+    padding: 10px;
   }
-  
-  input:focus,
-  textarea:focus {
-    outline: none;
-    box-shadow: 0 0 10px rgb(80, 212, 212); /* Blue glow on focus */
-  }
-  
-  textarea {
-    height: 150px;
-    resize: none;
-  }
-  
+
   button {
-    align-self: center;
-    padding: 15px 30px;
-    background: #00aaff; /* Bright blue button */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.2em;
-    cursor: pointer;
-    transition: background 0.3s;
+    padding: 10px 20px;
+    font-size: 1em;
   }
-  
-  button:hover {
-    background: #0077cc;
-    color:#000000; /* Darker blue on hover */
-  }
-  
+}

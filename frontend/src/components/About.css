@@ -74,9 +74,9 @@
   }
 
   .content-box {
-    width: 130%; /* Make content boxes slightly wider than the screen width */
-    margin: 0 auto 20px auto; /* Center content boxes horizontally and add vertical margin */
-    margin-left: -15%; 
+    width: 195%; /* Make content boxes slightly wider than the screen width */
+ /* Center content boxes horizontally and add vertical margin */
+    margin-left: -43%; 
     font-size: 13px;/* Adjusted to decrease space from the left */
   }
 
