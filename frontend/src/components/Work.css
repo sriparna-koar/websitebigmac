@@ -79,11 +79,11 @@
     transform: scale(1.05);
 }
  h2 {
-    font-size: 2em; /* Increased font size for h2 title */
+    font-size: 1.5em; /* Increased font size for h2 title */
     margin-bottom: 20px; /* Added margin bottom for spacing */
   }
  p {
-    font-size: 1.3em;
+    font-size: 1.0em;
     color: #242121;
   }
 /* Media Queries for Mobile Responsiveness */
@@ -93,12 +93,12 @@
     }
 
     h1 {
-        font-size: 2em;
+        font-size: 1.5em;
         margin-bottom: 30px;
     }
 
     p {
-        font-size: 1.1em;
+        font-size: 1.0em;
     }
 
     .steps-section {
@@ -143,7 +143,7 @@
     }
 
     h1 {
-        font-size: 1.8em;
+        font-size: 1.5em;
     }
 
     p {

@@ -5,7 +5,7 @@
   padding: 0;
   position: relative;
   width: 100%;
-  margin-top: 6%;
+  margin-top: 8%;
   height: 85vh; /* Set the height of the header */
 }
 
@@ -62,7 +62,7 @@
   background: rgba(45, 42, 42, 0.5);
 }
 .WebDesign-header-text p {
-  font-size: 1.3em;
+  font-size: 1.0em;
   color: #ddd;
   margin: 0.5em 0;
   font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -135,7 +135,7 @@
   justify-content: center;
   padding: 20px;
   color: white;
-  font-size: 1.4em;
+  font-size: 1.0em;
   margin-top: 8%;
   margin-bottom: 9%;
 }
@@ -183,7 +183,7 @@
 }
 
 .portfolio-item p {
-  font-size: 1.1em;
+  font-size: 1.0em;
   color: #ffffff;
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
@@ -197,7 +197,7 @@
   text-align: center;
   margin-bottom: 20px;
   color: rgb(255, 255, 255);
-  font-size: 2.5em;
+  font-size: 1.5em;
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
@@ -207,7 +207,7 @@
   justify-content: space-around;
 }
 .WebDesign-process p {
-  font-size: 1.2em;
+  font-size: 1.0em;
   color: #1d1b1b;
   font-family: 'Helvetica Neue', Arial, sans-serif;
   margin-bottom: 30px;
@@ -225,12 +225,12 @@
   background: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.9));
 }
 .WebDesign-process-step h3 {
-  font-size: 1.7em;
+  font-size: 1.5em;
   margin-bottom: 10px;
   color: #000000;
 }
 .WebDesign-process-step p {
-  font-size: 1.3em;
+  font-size: 1.0m;
   color: #020101;
 }
 .WebDesign-contact-form {

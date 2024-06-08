@@ -13,11 +13,11 @@
   gap: 20px; /* Add gap for consistent spacing */
 }
 .content-box h2 {
-  font-size: 2em; /* Increased font size for h2 title */
+  font-size: 1.5em; /* Increased font size for h2 title */
   margin-bottom: 20px; /* Added margin bottom for spacing */
 }
 .content-box p {
-  font-size: 1.3em;
+  font-size: 1.0em;
   color: #ddd;
 }
 .content-box {
