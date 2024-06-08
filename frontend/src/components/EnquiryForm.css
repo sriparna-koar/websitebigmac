@@ -1,0 +1,65 @@
+.EnquiryForm {
+
+    max-width: 800px;
+    margin-top: 10%;
+    margin: 0 auto;
+    padding: 50px;
+    background: rgba(26, 26, 26, 0.7); /* Dark background with transparency */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 80px 80px rgba(0, 0, 0, 0.9);
+  }
+  
+  .EnquiryForm h2 {
+    color: white;
+    text-align: center;
+    margin-top: 14%;
+    font-size: 2.5em; /* Increased font size */
+    margin-bottom: 20px;
+  }
+  
+  .EnquiryForm-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input[type='text'],
+  input[type='email'],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type='text']:focus,
+  input[type='email']:focus,
+  textarea:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  button[type='submit'] {
+    align-self: center;
+    padding: 15px 30px;
+    background: #00aaff; /* Bright blue button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button[type='submit']:hover {
+    background-color: #0056b3;
+  }
+  

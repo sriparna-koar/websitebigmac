@@ -1,0 +1,28 @@
+/* Dots.css */
+
+#dots-container {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    z-index: -1;
+  }
+  
+  .dot {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: white; /* White color for the dots */
+    border-radius: 50%;
+    animation: move 20s linear infinite;
+  }
+  
+  @keyframes moveDots {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-100vh);
+    }
+  }
+  

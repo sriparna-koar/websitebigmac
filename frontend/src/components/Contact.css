@@ -1,0 +1,83 @@
+/* Contact.css */
+
+#contact {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px;
+  background: rgba(26, 26, 26, 0.7); /* Dark background with transparency */
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.9); /* Darker and more prominent shadow */
+}
+
+
+  
+  h1 {
+    color: white;
+    text-align: center;
+    font-size: 2.5em; /* Increased font size */
+    margin-bottom: 20px;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .form-group + .form-group {
+    margin-left: 20px;
+  }
+  
+  label {
+    color: #bbb; /* Light gray text */
+    margin-bottom: 10px;
+  }
+  
+  input,
+  textarea {
+    background: #333; /* Darker input background */
+    color: #ddd; /* Light gray text */
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  input:focus,
+  textarea:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgb(80, 212, 212); /* Blue glow on focus */
+  }
+  
+  textarea {
+    height: 150px;
+    resize: none;
+  }
+  
+  button {
+    align-self: center;
+    padding: 15px 30px;
+    background: #00aaff; /* Bright blue button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background: #0077cc;
+    color:#000000; /* Darker blue on hover */
+  }
+  

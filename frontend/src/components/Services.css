@@ -1,0 +1,110 @@
+/* Services.css */
+
+#services {
+    position: relative;
+    padding: 2em;
+    /* padding: 50px; */
+    color: #fff;
+    text-align: center;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+  }
+  
+  #services h1 {
+    margin-bottom: 1.5em;
+    font-size: 2.5em;
+    color: #fff;
+  }
+  
+  .service-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;  /* Adjust gap between the cards */
+    position: relative;
+  }
+
+  
+   .service-card {
+    position: relative;
+    background: rgba(45, 42, 42, 0.5);
+    border-radius: 15px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    width: 45%; 
+    max-width: 700px;
+    height: 300px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    border: 2px solid rgba(0, 0, 0, 0.2); 
+  } 
+  
+  .service-card:hover {
+    transform: translateY(-30px);
+    box-shadow: 0 8px 16px rgba(69, 66, 66, 0.4);
+    background-color: rgba(50, 50, 50, 0.8);  /* Slightly darker background color on hover */
+  }
+  
+  .service-icon {
+    font-size: 4em; /* Increase the font size */
+    color: #00aaff;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle text shadow */
+    transition: transform 0.3s ease; /* Add transition effect */
+  }
+  
+  .service-icon:hover {
+    transform: scale(1.2); /* Scale up the icon on hover */
+  }
+  
+  .service-icon-overlay {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 2em; /* Increase the font size */
+    color: #00aaff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Add a subtle text shadow */
+    transition: transform 0.3s ease; /* Add transition effect */
+  }
+  
+  .service-icon-overlay:hover {
+    transform: scale(1.2); /* Scale up the icon overlay on hover */
+  }
+  
+  .service-card h2 {
+    font-size: 2em;
+    margin: 10px 0;
+    margin: 0.5em 0;
+  }
+  
+  .service-card p {
+    font-size: 1.3em;
+    color: #ddd;
+    margin: 0.5em 0;
+  }
+  
+  /* Media Queries for Mobile Responsiveness */
+  @media only screen and (max-width: 768px) {
+    .service-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .service-card {
+      width: calc(100% - 6px); /* Full width on smaller screens with a little padding */
+      max-width: auto;
+      margin-bottom: 20px; /* Space between cards on mobile */
+      height: auto;
+      margin-left: -15%;  /* Let height adjust based on content */
+    }
+  
+    .service-card h2 {
+      font-size: 1.5em; /* Adjust font size for mobile */
+    }
+  
+    .service-card p {
+      font-size: 1em; /* Adjust font size for mobile */
+    }
+  }
+  

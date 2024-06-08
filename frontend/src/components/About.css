@@ -1,0 +1,88 @@
+#about {
+  padding: 50px;
+  font-family: 'Helvetica Neue', Arial, sans-serif; /* Modern font */
+  color: #fff; 
+  /* Lighter text color for better readability */
+/* Dark background for the section */
+}
+
+.content-wrapper {
+  display: flex;
+  flex-wrap: wrap; /* Allow content boxes to wrap to the next line on smaller screens */
+  justify-content: space-between;
+  gap: 20px; /* Add gap for consistent spacing */
+}
+.content-box h2 {
+  font-size: 2em; /* Increased font size for h2 title */
+  margin-bottom: 20px; /* Added margin bottom for spacing */
+}
+.content-box p {
+  font-size: 1.3em;
+  color: #ddd;
+}
+.content-box {
+  flex: 1;
+  background-color: rgba(51, 51, 51, 0.5); /* Transparent background color */
+  color: #fff; /* Lighter text color */
+  height: 400px; /* Increased height */
+  width: 250px; /* Adjusted width */
+  position: relative;
+  padding: 40px;
+  margin-bottom: 20px; /* Add margin bottom to create space between content boxes */
+  border: none; /* Remove border */
+  border-radius: 15px; /* Larger border radius for a modern look */
+  box-sizing: border-box; /* Ensure padding and border are included in the width */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Shadow around the box */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  background: linear-gradient(135deg, #272525a9, #7eadb65e); /* Gradient background */
+}
+
+
+.content-box:hover {
+  transform: translateY(-10px) scale(1.05); /* Lift and scale effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Stronger shadow on hover */
+}
+
+.circle-icon {
+  position: absolute;
+  top: -30px; /* Adjusted for larger boxes */
+  right: -30px; /* Adjusted for larger boxes */
+  background: linear-gradient(135deg, #a4b9c4, #5ca6cc); /* Gradient background for the icon */
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for the icon */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.circle-icon img {
+  width: 29px; /* Adjusted size for mobile */
+  height: 29px; /* Adjusted size for mobile */
+  border-radius: 50%;
+  background-color: #fff; /* White background color */
+  padding: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for the icon */
+}
+
+.circle-icon:hover {
+  transform: rotate(360deg); /* Rotate effect on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Stronger shadow on hover */
+}
+
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column; /* Stack content boxes vertically on smaller screens */
+  }
+
+  .content-box {
+    width: 130%; /* Make content boxes slightly wider than the screen width */
+    margin: 0 auto 20px auto; /* Center content boxes horizontally and add vertical margin */
+    margin-left: -15%; 
+    font-size: 13px;/* Adjusted to decrease space from the left */
+  }
+
+  .circle-icon {
+    top: -30px; /* Adjusted for smaller screens */
+    right: calc(50% - 30px); /* Center circle icon horizontally */
+  }
+}
+

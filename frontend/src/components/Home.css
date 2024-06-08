@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  width: 100%;
+}
+/* Home.css */
+
+
+
+
+#home {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+.line {
+  border: none;
+  border-top: 1px solid #100000;
+  margin-top: -20px;
+  width: 70%;
+ 
+}
+#image-container {
+  position: absolute;
+  width: 100%;
+  height: 80%;
+    overflow-x: hidden;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.5s ease-in-out;
+  border-radius: 0;
+  top: 120px;
+  left: 0;
+  right: 0;
+}
+
+.line {
+  border: none;
+  border-top: 1px solid #100000;
+  margin-top: -20px;
+  width: 70%;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  color: white;
+}
+
+.carousel-nav {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 3;
+}
+
+@media (max-width: 768px) {
+  #image-container {
+    height: 100vh; /* Adjust height for smaller screens */
+  }
+
+  .carousel-nav {
+    top: auto;
+    bottom: 0; /* Align at the bottom */
+    transform: translateX(-50%);
+    left: 50%;
+  }
+}

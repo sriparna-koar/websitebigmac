@@ -1,0 +1,57 @@
+/* src/StatsSection.css */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+.stats-section {
+    background-color: #001128;
+    color: white;
+    padding: 60px 20px 70px 0px; /* Added bottom padding */
+    text-align: center;
+    width: 100%; /* Ensure the section spans the entire width */
+    margin-left: 0; /* Remove space on the left side */
+}
+
+
+.stats-title {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.stats-title span {
+    color: #65b8de; /* Adjust to the green color from your image */
+}
+
+.stats-subtitle {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #CCCCCC;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    flex: 1 1 200px;
+    margin: 20px;
+    text-align: center;
+}
+
+.stat-item i {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.stat-item h3 {
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+.stat-item p {
+    font-size: 1.1em;
+    color: #CCCCCC;
+}

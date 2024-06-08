@@ -1,0 +1,92 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+main {
+    flex: 1; /* Ensures the main content grows to fill available space */
+}
+footer {
+    background-color: rgba(10, 10, 10, 0.4); /* Slightly black with transparency */
+    color: white;
+    font-family: Arial, sans-serif;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    margin-top: auto; /* Ensure footer pushes to the bottom if page content is short */
+    overflow: hidden; /* Ensure the wave is contained within the footer */
+    border-top: 1px solid rgba(255, 255, 255, 0.3); /* Add a border to the top of the footer */
+    box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.5); /* Add shadow effect */
+}
+
+.footer-container p{
+    color:white;
+    font-size: 1.1em;
+    font-family: 'Helvetica Neue', Arial, sans-serif; 
+}
+.footer-wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Set the height to cover the entire footer */
+    overflow: hidden;
+    line-height: 0;
+    z-index: 1;
+}
+
+.footer-wave svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Set the height to cover the entire footer */
+    pointer-events: none; /* Ensure the SVG doesn't intercept mouse events */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 100px auto 0 auto; /* Adjusted margin to account for wave height */
+    padding-bottom: 40px;
+    z-index: 2;
+    position: relative; /* Ensure it stacks above the wave */
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 20px;
+}
+
+.footer-section h2, .footer-section h3 {
+    color: #72d0ff;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section li {
+    margin: 10px 0;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons i {
+    font-size: 24px;
+}
