@@ -5,7 +5,7 @@
   padding: 0;
   position: relative;
   width: 100%;
-  margin-top: 8%;
+  margin-top: 7.5%;
   height: 85vh; /* Set the height of the header */
 }
 
@@ -25,7 +25,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin-top: 40px;
+  margin-top: 37px;
 }
 
 .WebDesign-header-image-small {
@@ -39,7 +39,7 @@
   width: 100%;
   height: auto;
   border-radius: 8px;
-  margin-top: 27%;
+  margin-top: 26%;
   border-radius: 8%;
   box-shadow: 0 14px 18px rgba(0, 0, 0, 0.1);
 }
@@ -50,7 +50,7 @@
   color: #ffffff;
   text-align: left;
   border-radius: 15px;
-  margin-top: 8%;
+  margin-top: 6%;
   transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 
   box-shadow: 10px 18px 18px rgba(0, 0, 0, 0.2);
@@ -69,7 +69,7 @@
 }
 
 .WebDesign-portfolio {
-  margin-top: 127px; /* Moves the section slightly up */
+  margin-top: 85px; /* Moves the section slightly up */
   padding: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
 }
@@ -86,12 +86,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 90px;
+  gap: 70px;
 }
 
 .portfolio-item {
   position: relative;
-  width: 300px;
+  width: 230px;
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -136,7 +136,7 @@
   padding: 20px;
   color: white;
   font-size: 1.0em;
-  margin-top: 8%;
+  margin-top: 7%;
   margin-bottom: 9%;
 }
 
@@ -190,7 +190,7 @@
 
 .WebDesign-process {
   padding: 40px 20px;
-  margin-top: 840px;
+  margin-top: 640px;
 }
 
 .WebDesign-process h2 {
@@ -273,15 +273,20 @@
   transition: all 0.3s ease;
 }
 
+/* Existing styles for larger screens */
+
+/* Media query for 768px screens */
 @media (max-width: 768px) {
   .WebDesign-header-content {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
-  .WebDesign-header-image{
-margin-top: 100px;
+
+  .WebDesign-header-image {
+    margin-top: 100px;
   }
+
   .WebDesign-header-image-small,
   .WebDesign-header-text {
     width: 100%;
@@ -292,9 +297,11 @@ margin-top: 100px;
     padding: 20px;
     margin-top: 20px;
   }
-.WebDesign-process{
-margin-top: 1100px;;
-}
+
+  .WebDesign-process {
+    margin-top: 1100px;
+  }
+
   .WebDesign-process-steps {
     flex-direction: column;
   }
@@ -324,7 +331,7 @@ margin-top: 1100px;;
     text-align: center;
   }
 
-  .consultation-content, 
+  .consultation-content,
   .consultation-image {
     max-width: 100%;
     padding: 0;
@@ -332,5 +339,107 @@ margin-top: 1100px;;
 
   .consultation-image {
     margin-top: 20px;
+  }
+}
+
+/* Media query for 480px screens */
+@media (max-width: 480px) {
+  .WebDesign-App-header {
+    height: auto; /* Allow height to adjust automatically */
+    margin-top: 14%;
+  }
+
+  .WebDesign-header-image {
+    margin-top: 50px;
+  }
+
+  .WebDesign-header-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .WebDesign-header-image-small,
+  .WebDesign-header-text {
+    width: 100%;
+    padding: 5px;
+  }
+
+  .WebDesign-header-text {
+    padding: 10px;
+    font-size: 13px;
+    margin-top: 10px;
+  }
+
+  .WebDesign-portfolio {
+    margin-top: 50px;
+    padding: 10px;
+  }
+
+  .WebDesign-portfolio h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+
+  .WebDesign-portfolio-gallery {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .portfolio-item {
+    width: 100%;
+    max-width: 90%;
+  }
+
+  .consultation-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .consultation-content,
+  .consultation-image {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .consultation-image {
+    margin-top: 20px;
+  }
+
+  .WebDesign-process {
+    margin-top: 100px;
+    padding: 20px;
+  }
+
+  .WebDesign-process h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+
+  .WebDesign-process-steps {
+    flex-direction: column;
+  }
+
+  .WebDesign-process-step {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+  }
+
+  .WebDesign-process-step h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+  }
+
+  .WebDesign-contact-form input,
+  .WebDesign-contact-form textarea {
+    width: 100%;
+    max-width: 90%;
+    padding: 5px;
+  }
+
+  .WebDesign-contact-form button {
+    padding: 5px 10px;
   }
 }
