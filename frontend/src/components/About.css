@@ -90,8 +90,12 @@
 }
 
 @media (max-width: 480px) {
+  .content-wrapper {
+    padding: 0 10px; /* Add padding to the wrapper to ensure content doesn't touch the screen edges */
+  }
+
   .content-box {
-    width: 150%; /* Make content boxes occupy most of the screen width */
+    width: calc(100% - 20px); /* Make content boxes occupy the screen width minus some padding */
     margin: 20px auto; /* Center content boxes horizontally and add vertical margin */
     padding: 20px; /* Reduce padding for smaller screens */
     font-size: 1.0em; /* Adjust font size for readability */
@@ -99,7 +103,7 @@
 
   .circle-icon {
     top: -30px; /* Adjusted for smaller screens */
-    right: calc(50% - 25px); /* Center circle icon horizontally */
+    right: calc(50% - 15px); /* Center circle icon horizontally */
     width: 30px; /* Adjust size for smaller screens */
     height: 30px; /* Adjust size for smaller screens */
   }
