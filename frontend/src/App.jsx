@@ -228,12 +228,17 @@
 // );
 
 // export default AppWrapper;
+
+
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link, useLocation, useNavigate } from 'react-router-dom';
 import Home from './components/Home';
 import Footer from './components/Footer';
 import Services, { serviceData } from './components/Services';
 import WebDesign from './components/WebDesign';
+import WebDev from './components/WebDev';
+import Epic from './components/Epic';
+import ManPower from './components/ManPower';
 import './App.css';
 import EnquiryForm from './components/EnquiryForm';
 
@@ -325,9 +330,9 @@ const AppContent = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/web-design" element={<WebDesign />} />
-          <Route path="/web-development" element={<WebDesign />} />
-          <Route path="/e-commerce" element={<WebDesign />} />
-          <Route path="/digital-marketing" element={<WebDesign />} />
+          <Route path="/web-development" element={<WebDev/>} />
+          <Route path="/e-commerce" element={<Epic />} />
+          <Route path="/digital-marketing" element={<ManPower />} />
           <Route path="/enquiry-form" element={<EnquiryForm />} />
           {/* Define routes for other services */}
         </Routes>

@@ -96,7 +96,7 @@
       max-width: auto;
       margin-bottom: 20px; /* Space between cards on mobile */
       height: auto;
-      margin-left: -17%;  /* Let height adjust based on content */
+      margin-left: -5%;  /* Let height adjust based on content */
     }
   
     .service-card h2 {

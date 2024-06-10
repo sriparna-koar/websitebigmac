@@ -13,6 +13,7 @@ body {
 main {
     flex: 1; /* Ensures the main content grows to fill available space */
 }
+
 footer {
     background-color: rgba(10, 10, 10, 0.4); /* Slightly black with transparency */
     color: white;
@@ -28,11 +29,12 @@ footer {
     box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.5); /* Add shadow effect */
 }
 
-.footer-container p{
-    color:white;
+.footer-container p {
+    color: white;
     font-size: 1.1em;
-    font-family: 'Helvetica Neue', Arial, sans-serif; 
+    font-family: 'Helvetica Neue', Arial, sans-serif;
 }
+
 .footer-wave {
     position: absolute;
     top: 0;
@@ -80,6 +82,16 @@ footer {
 
 .footer-section li {
     margin: 10px 0;
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #72d0ff;
 }
 
 .social-icons {
