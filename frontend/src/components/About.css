@@ -95,7 +95,7 @@
   .content-box {
     width:160%; /* Make content boxes occupy the screen width minus some padding */
     margin: 20px 0; /* Center content boxes horizontally and add vertical margin */
-    padding: 20px; /* Reduce padding for smaller screens */
+
     font-size: 1.0em; /* Adjust font size for readability */
   }
 
