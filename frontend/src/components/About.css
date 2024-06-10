@@ -91,7 +91,7 @@
 
 @media (max-width: 480px) {
   .content-box {
-    width: 120%; /* Make content boxes occupy most of the screen width */
+    width: 150%; /* Make content boxes occupy most of the screen width */
     margin: 20px auto; /* Center content boxes horizontally and add vertical margin */
     padding: 20px; /* Reduce padding for smaller screens */
     font-size: 1.0em; /* Adjust font size for readability */
